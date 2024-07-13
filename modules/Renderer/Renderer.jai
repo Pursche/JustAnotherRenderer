@@ -8,7 +8,7 @@ RenderDevice :: #import,file "internal/RenderDevice.jai";
 RenderTargetHandler :: #import,file "internal/RenderTargetHandler.jai";
 
 // Descs
-#import,file "descriptors/RTDesc.jai";
+#import "Descriptors";
 
 Init :: (hwnd: HWND, width: u32, height: u32)
 {

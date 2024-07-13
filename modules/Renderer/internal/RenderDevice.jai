@@ -3,12 +3,11 @@
 #import "dxgi";
 #import "d3d12";
 
+#load "../Settings.jai";
+
 //---------------------------------------------------------------------
 // Constants
 //
-DEBUG          :: true;
-ASSERT_ON_FAIL :: true;
-BREAK_ON_ERROR :: false;
 FRAME_COUNT    :u32: 2;
 
 _hwnd : HWND;
@@ -324,14 +323,6 @@ _InitDevice :: () -> bool
 // Render Context: IDXGISwapChain3, ID3D12Resource, ID3D12DescriptorHeap
 //
 VSYNC :: false;
-MAX_SWAPCHAIN_BUFFER_COUNT :: 3;
-
-_d3d12Swapchain    : *IDXGISwapChain3;
-_d3d12Rtvs         : [MAX_SWAPCHAIN_BUFFER_COUNT] *ID3D12Resource;
-_d3d12RtvHeap     : *ID3D12DescriptorHeap;
-_d3d12RtvHeapIncSize: u32;
-_d3d12PresentFence: *ID3D12Fence;
-_d3d12PresentEvent: *void;
 
 _d3d12ScreenshotRTV: *ID3D12Resource;
 

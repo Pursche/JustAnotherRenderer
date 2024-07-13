@@ -1,9 +1,9 @@
 #import "Basic";
 #import "Windows";
 
-Renderer :: #import,file "../renderer/Renderer.jai";
+Renderer :: #import "Renderer";
 
-#import,file "../renderer/descriptors/RTDesc.jai";
+#import "Descriptors";
 
 _swapChainRT: RTHandle;
 

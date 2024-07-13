@@ -18,4 +18,4 @@ SwapChainRTDesc :: struct
 }
 
 RTHandle :: #type, distinct s32;
-RTHANDLE_INVALID: RTHandle = -1;
+INVALID_RT_HANDLE: RTHandle = -1;
